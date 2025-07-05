@@ -1,7 +1,7 @@
 (A) Initialize project structure with HTML, CSS, and JavaScript files +ProjectSetup
 (A) Set up Shoelace component library via CDN +ProjectSetup
 (A) Create basic HTML layout with Shoelace components +ProjectSetup
-(A) Deploy to GitHub Pages +ProjectSetup
+x (A) Deploy to GitHub Pages +ProjectSetup
 
 (A) Implement PKCE with S256 method +OAuthImplementation
 (A) Create OAuth 2.0 authorization code flow +OAuthImplementation
