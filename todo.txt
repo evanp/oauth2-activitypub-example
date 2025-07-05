@@ -1,12 +1,8 @@
-# ActivityPub OAuth 2.0 Sample Client - Todo List
-
-## Project Setup
 (A) Initialize project structure with HTML, CSS, and JavaScript files +ProjectSetup
 (A) Set up Shoelace component library via CDN +ProjectSetup
 (A) Create basic HTML layout with Shoelace components +ProjectSetup
 (A) Set up development server +ProjectSetup
 
-## Core OAuth 2.0 Implementation
 (A) Implement PKCE with S256 method +OAuthImplementation
 (A) Create OAuth 2.0 authorization code flow +OAuthImplementation
 (A) Implement client identification using ActivityPub Application/Service objects +OAuthImplementation
@@ -14,14 +10,12 @@
 (A) Implement token exchange and storage +OAuthImplementation
 (A) Add Bearer token support for API requests +OAuthImplementation
 
-## ActivityPub Integration
 (A) Create client metadata object (Application/Service type) +ActivityPubIntegration
 (A) Implement Webfinger lookup for actor discovery +ActivityPubIntegration
 (A) Add support for oauthAuthorizationEndpoint and oauthTokenEndpoint discovery +ActivityPubIntegration
 (A) Implement ActivityPub actor profile fetching +ActivityPubIntegration
 (A) Add support for reading actor collections (inbox, outbox, followers, following, liked) +ActivityPubIntegration
 
-## UI Components (using Shoelace)
 (B) Create login/authorization screen +UserInterface
 (B) Add actor input field (supports both direct URI and Webfinger format) +UserInterface
 (B) Create scope selection interface (read, write, write:sameorigin) +UserInterface
@@ -31,18 +25,15 @@
 (B) Create activity posting interface +UserInterface
 (B) Add error handling and user feedback components +UserInterface
 
-## Client Metadata
 (B) Define client Application object with client ID, name, description, icon, redirect URI, and attributedTo information +ClientMetadata
 (B) Host client metadata at accessible URI +ClientMetadata
 
-## Security Features
 (B) Implement secure token storage +SecurityFeatures
 (B) Add CSRF protection +SecurityFeatures
 (B) Validate redirect URIs against client metadata +SecurityFeatures
 (B) Implement proper error handling for OAuth failures +SecurityFeatures
 (B) Add scope validation +SecurityFeatures
 
-## ActivityPub API Features
 (C) Implement outbox posting for Create activities +ActivityPubAPIFeatures
 (C) Implement outbox posting for Follow/Undo activities +ActivityPubAPIFeatures
 (C) Implement outbox posting for Like/Unlike activities +ActivityPubAPIFeatures
@@ -51,7 +42,6 @@
 (C) Implement same-origin validation for write:sameorigin scope +ActivityPubAPIFeatures
 (C) Add instrument property support for activities +ActivityPubAPIFeatures
 
-## User Experience
 (C) Create responsive design for mobile and desktop +UserExperience
 (C) Add loading states and progress indicators +UserExperience
 (C) Implement proper error messages and recovery +UserExperience
@@ -59,21 +49,18 @@
 (C) Create intuitive navigation between features +UserExperience
 (C) Add keyboard shortcuts and accessibility features +UserExperience
 
-## Testing and Examples
 (D) Create sample activities for testing +TestingAndExamples
 (D) Add demo mode with mock data +TestingAndExamples
 (D) Test with various ActivityPub servers +TestingAndExamples
 (D) Add integration tests for OAuth flow +TestingAndExamples
 (D) Create documentation for users +TestingAndExamples
 
-## Documentation
 (D) Add README with setup instructions +Documentation
 (D) Document OAuth 2.0 flow implementation +Documentation
 (D) Add code comments explaining key concepts +Documentation
 (D) Create user guide for the application +Documentation
 (D) Document security considerations +Documentation
 
-## Advanced Features (Optional)
 (E) Add support for custom scopes +AdvancedFeatures
 (E) Implement token refresh flow +AdvancedFeatures
 (E) Add offline support with service workers +AdvancedFeatures
@@ -81,16 +68,8 @@
 (E) Add media upload support +AdvancedFeatures
 (E) Implement real-time updates via WebSockets +AdvancedFeatures
 
-## Deployment
 (E) Set up hosting for client metadata +Deployment
 (E) Configure CORS for cross-origin requests +Deployment
 (E) Add HTTPS support +Deployment
 (E) Set up proper redirect URI handling +Deployment
 (E) Test deployment with real ActivityPub servers +Deployment
-
-## Notes
-- Follow FEP-d8c2 specification strictly
-- Use Shoelace components for consistent UI
-- Ensure mobile-first responsive design
-- Focus on security best practices
-- Test with multiple ActivityPub implementations
