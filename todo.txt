@@ -1,98 +1,92 @@
 # ActivityPub OAuth 2.0 Sample Client - Todo List
 
 ## Project Setup
-- [ ] Initialize project structure with HTML, CSS, and JavaScript files
-- [ ] Set up Shoelace component library (CDN or npm)
-- [ ] Create basic HTML layout with Shoelace components
-- [ ] Set up development server (optional: use live-server or similar)
+(A) Initialize project structure with HTML, CSS, and JavaScript files +ProjectSetup
+(A) Set up Shoelace component library via CDN +ProjectSetup
+(A) Create basic HTML layout with Shoelace components +ProjectSetup
+(A) Set up development server +ProjectSetup
 
 ## Core OAuth 2.0 Implementation
-- [ ] Implement PKCE (Proof Key for Code Exchange) with S256 method
-- [ ] Create OAuth 2.0 authorization code flow
-- [ ] Implement client identification using ActivityPub Application/Service objects
-- [ ] Add redirect URI validation
-- [ ] Implement token exchange and storage
-- [ ] Add Bearer token support for API requests
+(A) Implement PKCE with S256 method +OAuthImplementation
+(A) Create OAuth 2.0 authorization code flow +OAuthImplementation
+(A) Implement client identification using ActivityPub Application/Service objects +OAuthImplementation
+(A) Add redirect URI validation +OAuthImplementation
+(A) Implement token exchange and storage +OAuthImplementation
+(A) Add Bearer token support for API requests +OAuthImplementation
 
 ## ActivityPub Integration
-- [ ] Create client metadata object (Application/Service type)
-- [ ] Implement Webfinger lookup for actor discovery
-- [ ] Add support for oauthAuthorizationEndpoint and oauthTokenEndpoint discovery
-- [ ] Implement ActivityPub actor profile fetching
-- [ ] Add support for reading actor collections (inbox, outbox, followers, following, liked)
+(A) Create client metadata object (Application/Service type) +ActivityPubIntegration
+(A) Implement Webfinger lookup for actor discovery +ActivityPubIntegration
+(A) Add support for oauthAuthorizationEndpoint and oauthTokenEndpoint discovery +ActivityPubIntegration
+(A) Implement ActivityPub actor profile fetching +ActivityPubIntegration
+(A) Add support for reading actor collections (inbox, outbox, followers, following, liked) +ActivityPubIntegration
 
 ## UI Components (using Shoelace)
-- [ ] Create login/authorization screen
-- [ ] Add actor input field (supports both direct URI and Webfinger format)
-- [ ] Create scope selection interface (read, write, write:sameorigin)
-- [ ] Add authorization status display
-- [ ] Create token management interface
-- [ ] Add collection browser for actor data
-- [ ] Create activity posting interface
-- [ ] Add error handling and user feedback components
+(B) Create login/authorization screen +UserInterface
+(B) Add actor input field (supports both direct URI and Webfinger format) +UserInterface
+(B) Create scope selection interface (read, write, write:sameorigin) +UserInterface
+(B) Add authorization status display +UserInterface
+(B) Create token management interface +UserInterface
+(B) Add collection browser for actor data +UserInterface
+(B) Create activity posting interface +UserInterface
+(B) Add error handling and user feedback components +UserInterface
 
 ## Client Metadata
-- [ ] Define client Application object with:
-  - [ ] Client ID (ActivityPub URI)
-  - [ ] Name and description
-  - [ ] Icon and branding
-  - [ ] Redirect URI
-  - [ ] AttributedTo information
-- [ ] Host client metadata at accessible URI
+(B) Define client Application object with client ID, name, description, icon, redirect URI, and attributedTo information +ClientMetadata
+(B) Host client metadata at accessible URI +ClientMetadata
 
 ## Security Features
-- [ ] Implement secure token storage (consider browser security)
-- [ ] Add CSRF protection
-- [ ] Validate redirect URIs against client metadata
-- [ ] Implement proper error handling for OAuth failures
-- [ ] Add scope validation
+(B) Implement secure token storage +SecurityFeatures
+(B) Add CSRF protection +SecurityFeatures
+(B) Validate redirect URIs against client metadata +SecurityFeatures
+(B) Implement proper error handling for OAuth failures +SecurityFeatures
+(B) Add scope validation +SecurityFeatures
 
 ## ActivityPub API Features
-- [ ] Implement outbox posting for various activity types:
-  - [ ] Create activities
-  - [ ] Follow/Undo activities
-  - [ ] Like/Unlike activities
-  - [ ] Update/Delete activities
-- [ ] Add support for custom activity types
-- [ ] Implement same-origin validation for write:sameorigin scope
-- [ ] Add instrument property support for activities
+(C) Implement outbox posting for Create activities +ActivityPubAPIFeatures
+(C) Implement outbox posting for Follow/Undo activities +ActivityPubAPIFeatures
+(C) Implement outbox posting for Like/Unlike activities +ActivityPubAPIFeatures
+(C) Implement outbox posting for Update/Delete activities +ActivityPubAPIFeatures
+(C) Add support for custom activity types +ActivityPubAPIFeatures
+(C) Implement same-origin validation for write:sameorigin scope +ActivityPubAPIFeatures
+(C) Add instrument property support for activities +ActivityPubAPIFeatures
 
 ## User Experience
-- [ ] Create responsive design for mobile and desktop
-- [ ] Add loading states and progress indicators
-- [ ] Implement proper error messages and recovery
-- [ ] Add success confirmations
-- [ ] Create intuitive navigation between features
-- [ ] Add keyboard shortcuts and accessibility features
+(C) Create responsive design for mobile and desktop +UserExperience
+(C) Add loading states and progress indicators +UserExperience
+(C) Implement proper error messages and recovery +UserExperience
+(C) Add success confirmations +UserExperience
+(C) Create intuitive navigation between features +UserExperience
+(C) Add keyboard shortcuts and accessibility features +UserExperience
 
 ## Testing and Examples
-- [ ] Create sample activities for testing
-- [ ] Add demo mode with mock data
-- [ ] Test with various ActivityPub servers
-- [ ] Add integration tests for OAuth flow
-- [ ] Create documentation for users
+(D) Create sample activities for testing +TestingAndExamples
+(D) Add demo mode with mock data +TestingAndExamples
+(D) Test with various ActivityPub servers +TestingAndExamples
+(D) Add integration tests for OAuth flow +TestingAndExamples
+(D) Create documentation for users +TestingAndExamples
 
 ## Documentation
-- [ ] Add README with setup instructions
-- [ ] Document OAuth 2.0 flow implementation
-- [ ] Add code comments explaining key concepts
-- [ ] Create user guide for the application
-- [ ] Document security considerations
+(D) Add README with setup instructions +Documentation
+(D) Document OAuth 2.0 flow implementation +Documentation
+(D) Add code comments explaining key concepts +Documentation
+(D) Create user guide for the application +Documentation
+(D) Document security considerations +Documentation
 
 ## Advanced Features (Optional)
-- [ ] Add support for custom scopes
-- [ ] Implement token refresh flow
-- [ ] Add offline support with service workers
-- [ ] Create activity templates
-- [ ] Add media upload support
-- [ ] Implement real-time updates via WebSockets
+(E) Add support for custom scopes +AdvancedFeatures
+(E) Implement token refresh flow +AdvancedFeatures
+(E) Add offline support with service workers +AdvancedFeatures
+(E) Create activity templates +AdvancedFeatures
+(E) Add media upload support +AdvancedFeatures
+(E) Implement real-time updates via WebSockets +AdvancedFeatures
 
 ## Deployment
-- [ ] Set up hosting for client metadata
-- [ ] Configure CORS for cross-origin requests
-- [ ] Add HTTPS support
-- [ ] Set up proper redirect URI handling
-- [ ] Test deployment with real ActivityPub servers
+(E) Set up hosting for client metadata +Deployment
+(E) Configure CORS for cross-origin requests +Deployment
+(E) Add HTTPS support +Deployment
+(E) Set up proper redirect URI handling +Deployment
+(E) Test deployment with real ActivityPub servers +Deployment
 
 ## Notes
 - Follow FEP-d8c2 specification strictly
