@@ -1,0 +1,102 @@
+# ActivityPub OAuth 2.0 Sample Client - Todo List
+
+## Project Setup
+- [ ] Initialize project structure with HTML, CSS, and JavaScript files
+- [ ] Set up Shoelace component library (CDN or npm)
+- [ ] Create basic HTML layout with Shoelace components
+- [ ] Set up development server (optional: use live-server or similar)
+
+## Core OAuth 2.0 Implementation
+- [ ] Implement PKCE (Proof Key for Code Exchange) with S256 method
+- [ ] Create OAuth 2.0 authorization code flow
+- [ ] Implement client identification using ActivityPub Application/Service objects
+- [ ] Add redirect URI validation
+- [ ] Implement token exchange and storage
+- [ ] Add Bearer token support for API requests
+
+## ActivityPub Integration
+- [ ] Create client metadata object (Application/Service type)
+- [ ] Implement Webfinger lookup for actor discovery
+- [ ] Add support for oauthAuthorizationEndpoint and oauthTokenEndpoint discovery
+- [ ] Implement ActivityPub actor profile fetching
+- [ ] Add support for reading actor collections (inbox, outbox, followers, following, liked)
+
+## UI Components (using Shoelace)
+- [ ] Create login/authorization screen
+- [ ] Add actor input field (supports both direct URI and Webfinger format)
+- [ ] Create scope selection interface (read, write, write:sameorigin)
+- [ ] Add authorization status display
+- [ ] Create token management interface
+- [ ] Add collection browser for actor data
+- [ ] Create activity posting interface
+- [ ] Add error handling and user feedback components
+
+## Client Metadata
+- [ ] Define client Application object with:
+  - [ ] Client ID (ActivityPub URI)
+  - [ ] Name and description
+  - [ ] Icon and branding
+  - [ ] Redirect URI
+  - [ ] AttributedTo information
+- [ ] Host client metadata at accessible URI
+
+## Security Features
+- [ ] Implement secure token storage (consider browser security)
+- [ ] Add CSRF protection
+- [ ] Validate redirect URIs against client metadata
+- [ ] Implement proper error handling for OAuth failures
+- [ ] Add scope validation
+
+## ActivityPub API Features
+- [ ] Implement outbox posting for various activity types:
+  - [ ] Create activities
+  - [ ] Follow/Undo activities
+  - [ ] Like/Unlike activities
+  - [ ] Update/Delete activities
+- [ ] Add support for custom activity types
+- [ ] Implement same-origin validation for write:sameorigin scope
+- [ ] Add instrument property support for activities
+
+## User Experience
+- [ ] Create responsive design for mobile and desktop
+- [ ] Add loading states and progress indicators
+- [ ] Implement proper error messages and recovery
+- [ ] Add success confirmations
+- [ ] Create intuitive navigation between features
+- [ ] Add keyboard shortcuts and accessibility features
+
+## Testing and Examples
+- [ ] Create sample activities for testing
+- [ ] Add demo mode with mock data
+- [ ] Test with various ActivityPub servers
+- [ ] Add integration tests for OAuth flow
+- [ ] Create documentation for users
+
+## Documentation
+- [ ] Add README with setup instructions
+- [ ] Document OAuth 2.0 flow implementation
+- [ ] Add code comments explaining key concepts
+- [ ] Create user guide for the application
+- [ ] Document security considerations
+
+## Advanced Features (Optional)
+- [ ] Add support for custom scopes
+- [ ] Implement token refresh flow
+- [ ] Add offline support with service workers
+- [ ] Create activity templates
+- [ ] Add media upload support
+- [ ] Implement real-time updates via WebSockets
+
+## Deployment
+- [ ] Set up hosting for client metadata
+- [ ] Configure CORS for cross-origin requests
+- [ ] Add HTTPS support
+- [ ] Set up proper redirect URI handling
+- [ ] Test deployment with real ActivityPub servers
+
+## Notes
+- Follow FEP-d8c2 specification strictly
+- Use Shoelace components for consistent UI
+- Ensure mobile-first responsive design
+- Focus on security best practices
+- Test with multiple ActivityPub implementations
