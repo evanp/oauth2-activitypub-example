@@ -34,6 +34,8 @@
 (C) Create intuitive navigation between features +UserExperience
 (C) Add keyboard shortcuts and accessibility features +UserExperience
 
+(D) Set up web-test-runner for testing +TestingAndExamples
+(D) Add unit tests for OAuth flow +TestingAndExamples
 (D) Add integration tests for OAuth flow +TestingAndExamples
 (D) Create documentation for users +TestingAndExamples
 
