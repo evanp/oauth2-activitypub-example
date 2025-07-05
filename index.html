@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OAuth 2.0 ActivityPub Client</title>
+
+    <!-- Shoelace Components via CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.12.0/cdn/themes/light.css" />
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.12.0/cdn/shoelace-autoloader.js"></script>
+
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>OAuth 2.0 ActivityPub Client</h1>
+            <p>A demonstration of OAuth 2.0 authorization flow with ActivityPub</p>
+        </header>
+
+        <main>
+            <div id="login-section">
+                <sl-card>
+                    <div slot="header">
+                        <h2>Login with ActivityPub</h2>
+                    </div>
+
+                    <div class="form-group">
+                        <sl-input
+                            id="actor-input"
+                            label="ActivityPub Actor"
+                            placeholder="Enter your ActivityPub actor (e.g., @user@example.com)"
+                            required>
+                        </sl-input>
+                    </div>
+
+                    <div class="form-group">
+                        <sl-button
+                            id="login-button"
+                            variant="primary"
+                            size="large">
+                            Login
+                        </sl-button>
+                    </div>
+                </sl-card>
+            </div>
+
+            <div id="welcome-section" style="display: none;">
+                <sl-card>
+                    <div slot="header">
+                        <h2>Welcome!</h2>
+                    </div>
+
+                    <div class="welcome-content">
+                        <p id="welcome-message">Hello, <span id="user-name"></span>!</p>
+                        <p>You have successfully authenticated with ActivityPub.</p>
+                    </div>
+
+                    <div class="form-group">
+                        <sl-button
+                            id="logout-button"
+                            variant="neutral"
+                            size="large">
+                            Logout
+                        </sl-button>
+                    </div>
+                </sl-card>
+            </div>
+
+            <div id="error-section" style="display: none;">
+                <sl-alert
+                    id="error-alert"
+                    variant="danger"
+                    closable>
+                    <strong>Error:</strong>
+                    <span id="error-message"></span>
+                </sl-alert>
+            </div>
+        </main>
+    </div>
+
+    <!-- Application script -->
+    <script type="module" src="app.js"></script>
+</body>
+</html>
