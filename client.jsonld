@@ -1,0 +1,22 @@
+{
+  "@context": [
+    "https://www.w3.org/ns/activitystreams",
+    "https://purl.archive.org/socialweb/oauth"
+  ],
+  "id": "https://evanp.github.io/oauth2-activitypub-example/client.jsonld",
+  "name": "ActivityPub OAuth 2.0 Sample Client",
+  "type": "Application",
+  "icon": {
+    "type": "Link",
+    "href": "https://evanp.github.io/oauth2-activitypub-example/icon.png",
+    "mediaType": "image/png"
+  },
+  "summary": "A sample browser-based client demonstrating OAuth 2.0 integration with ActivityPub APIs using the FEP-d8c2 specification.",
+  "attributedTo": {
+    "name": "OAuth 2.0 ActivityPub Example",
+    "id": "https://evanp.github.io/oauth2-activitypub-example/organization",
+    "type": "Organization",
+    "summary": "Educational project demonstrating OAuth 2.0 integration with ActivityPub"
+  },
+  "redirectURI": "https://evanp.github.io/oauth2-activitypub-example/"
+}

@@ -10,7 +10,6 @@
 (A) Implement token exchange and storage +OAuthImplementation
 (A) Add Bearer token support for API requests +OAuthImplementation
 
-(A) Create client metadata object (Application type) +ActivityPubIntegration
 (A) Implement Webfinger lookup for actor discovery +ActivityPubIntegration
 (A) Add support for oauthAuthorizationEndpoint and oauthTokenEndpoint discovery +ActivityPubIntegration
 (A) Implement ActivityPub actor profile fetching +ActivityPubIntegration

@@ -1,3 +1,5 @@
+import { chromeLauncher } from '@web/test-runner-chrome';
+
 export default {
   files: 'test/**/*.test.js',
   nodeResolve: true,
@@ -7,12 +9,7 @@ export default {
     }
   },
   browsers: [
-    {
-      name: 'chromium',
-      launchOptions: {
-        args: ['--disable-web-security', '--disable-features=VizDisplayCompositor']
-      }
-    }
+    chromeLauncher({ launchOptions: { headless: false } })
   ],
   testRunnerHtml: testFramework => `
     <html>
